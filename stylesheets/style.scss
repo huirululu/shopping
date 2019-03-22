@@ -104,7 +104,8 @@ a {
     }
     h2 {
         font-size: 50px;
-        color:#000;
+        color: rgba(255, 255,255,0.8);
+        text-shadow:2px 2px #000;
         position: absolute;
         left: 10%;
         top: 0;
@@ -129,7 +130,7 @@ a {
         flex-wrap: wrap;
     }
 
-    li {
+    li {     
         margin: 0 10px 20px;
         flex: 0 0 250px;
     }
@@ -620,8 +621,11 @@ a {
         }
     
         li {
+            align-items: center;
+            flex-direction: column;
             display: flex;
-            flex-basis: auto;
+            flex:1;
+            margin-bottom: 60px;
         }
 
         li > a {
@@ -634,14 +638,18 @@ a {
         }
 
         li h2 {
-            margin-top:60px;
+            margin-top:0;
             a {
                 font-size: 20px;
             }  
         }
         li p {
-            margin-top:20px; 
+            margin-left: 30px;
+            margin-top:5px; 
             font-size: 20px;
+        }
+        div {
+            display: flex;
         }
     }
     .carimg li{

@@ -121,7 +121,8 @@ a:hover {
 
 .index-image h2 {
   font-size: 50px;
-  color: #000;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 2px 2px #000;
   position: absolute;
   left: 10%;
   top: 0;
@@ -692,11 +693,20 @@ a:hover {
             flex-direction: column;
   }
   .hot-item li {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-bottom: 60px;
   }
   .hot-item li > a {
     -webkit-box-flex: 0;
@@ -711,14 +721,20 @@ a:hover {
             flex: 1;
   }
   .hot-item li h2 {
-    margin-top: 60px;
+    margin-top: 0;
   }
   .hot-item li h2 a {
     font-size: 20px;
   }
   .hot-item li p {
-    margin-top: 20px;
+    margin-left: 30px;
+    margin-top: 5px;
     font-size: 20px;
+  }
+  .hot-item div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .carimg li {
     -webkit-box-orient: vertical;
