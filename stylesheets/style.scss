@@ -124,8 +124,8 @@ a {
         padding: 0px;
         list-style: none;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        //flex-direction: row;
+       // justify-content: center;
         flex-wrap: wrap;
     }
 
@@ -566,9 +566,16 @@ a {
         width: 280px;
     }
 
-    .hot-item li {
+    .hot-item {
+
+        ul {
+            justify-content: center;
+        }
+
+        li {
         margin: 0 50px 20px;
         flex:0 0 250px;
+        }
     }
     .carimg h3 a {
         font-size: 16px;
